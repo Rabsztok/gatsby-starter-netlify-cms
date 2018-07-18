@@ -45,14 +45,21 @@ const Button = styled.a`
   padding: 10px 50px;
 `
 
-const JoinUsSection = ({logo, joinUsTitle, joinUsButtonText, joinUsButtonURL, joinUsBackground}) =>
+const JoinUsSection = ({
+  logo,
+  joinUsTitle,
+  joinUsButtonText,
+  joinUsButtonURL,
+  joinUsBackground
+}) => (
   <Wrapper backgroundImage={joinUsBackground}>
     <Container>
-      <Logo src={logo}/>
+      <Logo src={logo} />
       <Title>{joinUsTitle}</Title>
-      <Underline/>
+      <Underline />
       <Button href={joinUsButtonURL}>{joinUsButtonText}</Button>
     </Container>
   </Wrapper>
+)
 
 export default JoinUsSection

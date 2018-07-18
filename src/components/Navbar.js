@@ -30,10 +30,10 @@ const NavbarLink = styled(Link)`
   }
 `
 
-const Navbar = ({logo}) => (
+const Navbar = ({ logo }) => (
   <Container>
     <Nav>
-      <Logo src={logo}/>
+      <Logo src={logo} />
       <Menu>
         <NavbarLink to="#about">About</NavbarLink>
         <NavbarLink to="#marketplaces">Marketplaces / Ark Labs</NavbarLink>

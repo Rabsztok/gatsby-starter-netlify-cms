@@ -2,15 +2,17 @@ import React from 'react'
 import Navbar from 'components/Navbar'
 import JoinUsSection from 'components/JoinUsSection'
 
+export const HomepageTemplate = props => (
+  <div>
+    <Navbar {...props} />
+    <JoinUsSection {...props} />
+  </div>
+)
+
 const Homepage = ({ data }) => {
   const { markdownRemark: post } = data
 
-  return (
-    <div>
-      <Navbar {...post.frontmatter}/>
-      <JoinUsSection {...post.frontmatter}/>
-    </div>
-  )
+  return <HomepageTemplate {...post.frontmatter} />
 }
 
 export default Homepage
