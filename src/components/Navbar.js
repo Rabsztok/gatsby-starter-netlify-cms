@@ -2,15 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Container } from 'bloomer'
-import logo from '../img/logo.svg'
 
 const Nav = styled.nav`
+  height: 128px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 
 const Logo = styled.img`
-  height: 86px;
+  height: 80px;
 `
 
 const Menu = styled.div`
@@ -23,9 +24,13 @@ const NavbarLink = styled(Link)`
   text-decoration: none;
   padding: 24px;
   text-transform: uppercase;
+
+  &:hover {
+    color: #f7a825;
+  }
 `
 
-const Navbar = () => (
+const Navbar = ({logo}) => (
   <Container>
     <Nav>
       <Logo src={logo}/>

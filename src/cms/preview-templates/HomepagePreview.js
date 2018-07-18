@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { HomepageTemplate } from '../../templates/homepage'
 
 const HomepagePreview = ({ entry, widgetFor }) => (
-  <IndexPageTemplate
+  <HomepagePreview
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

@@ -10,9 +10,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet>
       <title>Makers Ark</title>
 
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700" rel="stylesheet"/>
     </Helmet>
-    <Navbar />
     <div>{children()}</div>
   </div>
 )

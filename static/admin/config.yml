@@ -14,5 +14,8 @@ collections:
         name: "homepage"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Logo", name: logo, widget: "image"}
+          - {label: "Join Us Background", name: joinUsBackground, widget: "image"}
+          - {label: "Join Us Title", name: "joinUsTitle", widget: "string"}
+          - {label: "Join Us Button Text", name: "joinUsButtonText", widget: "string"}
+          - {label: "Join Us Button URL", name: "joinUsButtonURL", widget: "string"}
